@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".HomeActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton_settings"
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#FFFFFF"
+        android:onClick="Home2OnClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_settings_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_login"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#FFFFFF"
+        android:onClick="Home2OnClick"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_settings"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_24dp" />
+
+    <ImageView
+        android:id="@+id/imageSlider"
+        android:src="@drawable/hoss_icon3"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageSlider"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/jeonghyeong"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="20dp"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/naegwa"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ibiinhugwa"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_accessibility_24dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="10dp"
+                android:text="내과"
+                app:layout_constraintStart_toEndOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/naegwa" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="이비인후과"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibiinhugwa" />
+
+            <ImageView
+                android:id="@+id/chigwa"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="60dp"
+                android:contentDescription="TODO"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/jeonghyeong"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibiinhugwa"
+                app:srcCompat="@drawable/ic_healing_24dp" />
+
+            <ImageView
+                android:id="@+id/moonLight"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="20dp"
+                android:background="#00FFFFFF"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/naegwa"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_brightness_3_24dp" />
+
+            <ImageView
+                android:id="@+id/psychology"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="60dp"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/moonLight"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toEndOf="@+id/jeonghyeong"
+                app:layout_constraintTop_toBottomOf="@+id/jungsin"
+                app:srcCompat="@drawable/ic_whatshot_24dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="10dp"
+                android:text="산부인과"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/pregnant" />
+
+            <ImageView
+                android:id="@+id/binyogigwa"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="60dp"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/naegwa"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toEndOf="@+id/ibiinhugwa"
+                app:layout_constraintTop_toBottomOf="@+id/jeonghyeong"
+                app:srcCompat="@drawable/ic_child_friendly_24dp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="나가기"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.514"
+                app:layout_constraintStart_toEndOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/imageView31" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:text="지도"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emergency" />
+
+            <ImageView
+                android:id="@+id/ophthalmology"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="60dp"
+                android:background="@color/design_default_color_background"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toEndOf="@+id/naegwa"
+                app:layout_constraintTop_toBottomOf="@+id/soagwa"
+                app:srcCompat="@drawable/ic_eye_24dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="성형외과"
+                app:layout_constraintStart_toEndOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/psychology" />
+
+            <ImageView
+                android:id="@+id/publicHealth"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="60dp"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView31"
+                app:layout_constraintHorizontal_bias="0.862"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pregnant"
+                app:srcCompat="@drawable/ic_security_24dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="소아과"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.514"
+                app:layout_constraintStart_toEndOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/soagwa" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="안과"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toEndOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/ophthalmology" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="달빛병원"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/moonLight" />
+
+            <ImageView
+                android:id="@+id/ibiinhugwa"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/jeonghyeong"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_face_24dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="218dp"
+                android:layout_marginLeft="218dp"
+                android:layout_marginTop="10dp"
+                android:text="보건소"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/publicHealth" />
+
+            <ImageView
+                android:id="@+id/emergency"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="60dp"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/jeonghyeong"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chigwa"
+                app:srcCompat="@drawable/ic_send_24dp" />
+
+            <ImageView
+                android:id="@+id/naegwa"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="20dp"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/moonLight"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/jeonghyeong"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_accessible_24dp" />
+
+            <ImageView
+                android:id="@+id/jungsin"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="60dp"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/moonLight"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toEndOf="@+id/jeonghyeong"
+                app:layout_constraintTop_toBottomOf="@+id/naegwa"
+                app:srcCompat="@drawable/ic_people_24dp" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="60dp"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toEndOf="@+id/naegwa"
+                app:layout_constraintTop_toBottomOf="@+id/ophthalmology"
+                app:srcCompat="@drawable/ic_directions_black_24dp" />
+
+            <ImageView
+                android:id="@+id/soagwa"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="60dp"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toEndOf="@+id/naegwa"
+                app:layout_constraintTop_toBottomOf="@+id/moonLight"
+                app:srcCompat="@drawable/ic_child_care_24dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="정형외과"
+                app:layout_constraintStart_toEndOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/jeonghyeong" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="정신과"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/jungsin" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="10dp"
+                android:text="치과"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chigwa" />
+
+            <ImageView
+                android:id="@+id/pregnant"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="60dp"
+                android:onClick="Home2OnClick"
+                android:scrollbarSize="4dp"
+                app:layout_constraintEnd_toStartOf="@+id/naegwa"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toEndOf="@+id/ibiinhugwa"
+                app:layout_constraintTop_toBottomOf="@+id/binyogigwa"
+                app:srcCompat="@drawable/ic_pregnant_woman_24dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="53dp"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="10dp"
+                android:text="비뇨기과"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/binyogigwa" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

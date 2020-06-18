@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:b="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+
+	<authentication-manager>
+		<authentication-provider>
+			<jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="select hospital_id, hospital_pw, enabled from hospital where hospital_id=?"
+				authorities-by-username-query="select hospital_id, authority from hospital where hospital_id=?" />
+		</authentication-provider>
+		<authentication-provider>
+			<jdbc-user-service data-source-ref="dataSource"
+				users-by-username-query="select doctor_id, doctor_pw, enabled from doctor where doctor_id=?"
+				authorities-by-username-query="select doctor_id, authority from doctor where doctor_id=?" />
+		</authentication-provider>
+	</authentication-manager>
+
+	<http security="none" pattern="/android/**"></http>
+
+	<http auto-config="true" use-expressions="true">
+		<intercept-url pattern="/android/**" access="permitAll" />
+		<intercept-url pattern="/login" access="permitAll" />
+		<intercept-url pattern="/signup" access="permitAll" />
+		<intercept-url pattern="/logout" access="permitAll" />
+		<intercept-url pattern="/**" access="isAuthenticated()" />
+
+		<form-login login-page="/login"
+			authentication-failure-url="/login?error" />
+		<logout />
+	</http>
+</b:beans>

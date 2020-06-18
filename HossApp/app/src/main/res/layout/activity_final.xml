@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FinalActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar_final"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:max="100"
+        android:progress="75"
+        android:secondaryProgress="100"
+        />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:hint="병원명"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_address"
+        android:hint="주소"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_clinic"
+        android:hint="진료과"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_reserveDate"
+        android:hint="예약일시"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:hint="예약자이름"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_symptom"
+        android:hint="증상"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="영업시간"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_margin="20dp"
+       />
+
+    <Button
+        android:id="@+id/button_finalReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:onClick="FinalOnClick"
+        android:text="예약하기"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

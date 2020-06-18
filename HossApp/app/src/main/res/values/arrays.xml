@@ -1,0 +1,70 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+    <string-array name="지역">
+        <item>성북구</item>
+        <item>서초구</item>
+        <item>성동구</item>
+        <item>강남구</item>
+        <item>강동구</item>
+        <item>강서구</item>
+        <item>강북구</item>
+        <item>관악구</item>
+        <item>광진구</item>
+        <item>구로구</item>
+        <item>금천구</item>
+        <item>노원구</item>
+        <item>도봉구</item>
+        <item>동대문구</item>
+        <item>동작구</item>
+        <item>마포구</item>
+        <item>서대문구</item>
+        <item>송파구</item>
+        <item>양천구</item>
+        <item>영등포구</item>
+        <item>용산구</item>
+        <item>은평구</item>
+        <item>종로구</item>
+        <item>중구</item>
+        <item>중랑구</item>
+    </string-array>
+
+    <string-array name="진료과">
+        <item>병원</item>
+        <item>약국</item>
+        <item>이비인후과</item>
+        <item>정형외과</item>
+        <item>성형외과</item>
+        <item>치과</item>
+        <item>내과</item>
+        <item>비뇨기과</item>
+        <item>산부인과</item>
+        <item>안과</item>
+        <item>정신건강의학과</item>
+        <item>가정의학과</item>
+        <item>마취통증의학과</item>
+        <item>방사선종양과</item>
+        <item>병리과</item>
+        <item>신경과</item>
+        <item>신경외과</item>
+        <item>영상의학과</item>
+        <item>응급의학과</item>
+        <item>의공학과</item>
+        <item>임상약리학과</item>
+        <item>재활의학과</item>
+        <item>진담검사의학과</item>
+        <item>피부과</item>
+        <item>소아과</item>
+        <item>핵의학과</item>
+    </string-array>
+
+</resources>

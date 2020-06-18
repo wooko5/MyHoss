@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- "colorPrimary"는 액션바랑 하단 네비게이션바의 눌렀을 때 색상  -->
+    <color name="colorPrimary">#4AC380</color>
+
+    <!-- "colorPrimaryDark"는 상태창의 색상이다 -->
+    <color name="colorPrimaryDark">#FFFFFF</color>
+
+    <!-- "colorAccent"는 강조되는 색상이다 -->
+    <color name="colorAccent">#2E7D32</color>
+</resources>

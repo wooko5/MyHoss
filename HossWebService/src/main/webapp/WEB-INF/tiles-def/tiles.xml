@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+  <definition name="loginBase" template="/WEB-INF/tiles/loginLayout.jsp">
+    <put-attribute name="title" value="HOSS LoginPage" />
+  </definition>
+  <definition name="login" extends="loginBase">
+    <put-attribute name="title" value="HOSS LoginPage" />
+    <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+  </definition>
+  <definition name="signup" extends="loginBase">
+    <put-attribute name="title" value="HOSS HospitalSignupPage" />
+    <put-attribute name="body" value="/WEB-INF/views/signup.jsp" />
+  </definition>
+  
+  <definition name="base" template="/WEB-INF/tiles/layout.jsp">
+    <put-attribute name="title" value="HOSS Page" />
+    <put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+  </definition>
+  <definition name="home" extends="base">
+    <put-attribute name="title" value="HOSS HomePage" />
+    <put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+  </definition>
+  
+  <definition name="reservations" extends="base">
+    <put-attribute name="title" value="HOSS ReservationsPage" />
+    <put-attribute name="body" value="/WEB-INF/views/reservations.jsp" />
+  </definition>
+  <definition name="updateReservation" extends="base">
+    <put-attribute name="title" value="HOSS UpdateReservationPage" />
+    <put-attribute name="body" value="/WEB-INF/views/updateReservation.jsp" />
+  </definition>
+  
+  <definition name="managing" extends="base">
+    <put-attribute name="title" value="HOSS ManagingPage" />
+    <put-attribute name="body" value="/WEB-INF/views/managing.jsp" />
+  </definition>
+  <definition name="offices" extends="base">
+    <put-attribute name="title" value="HOSS OfficesPage" />
+    <put-attribute name="body" value="/WEB-INF/views/offices.jsp" />
+  </definition>
+  <definition name="addOffice" extends="base">
+    <put-attribute name="title" value="HOSS AddOfficePage" />
+    <put-attribute name="body" value="/WEB-INF/views/addOffice.jsp" />
+  </definition>
+  <definition name="updateOffice" extends="base">
+    <put-attribute name="title" value="HOSS UpdateOfficePage" />
+    <put-attribute name="body" value="/WEB-INF/views/updateOffice.jsp" />
+  </definition>
+  <definition name="doctors" extends="base">
+    <put-attribute name="title" value="HOSS DoctorsPage" />
+    <put-attribute name="body" value="/WEB-INF/views/doctors.jsp" />
+  </definition>
+  <definition name="addDoctor" extends="base">
+    <put-attribute name="title" value="HOSS AddDoctorPage" />
+    <put-attribute name="body" value="/WEB-INF/views/addDoctor.jsp" />
+  </definition>
+  <definition name="updateDoctor" extends="base">
+    <put-attribute name="title" value="HOSS UpdateDoctorPage" />
+    <put-attribute name="body" value="/WEB-INF/views/updateDoctor.jsp" />
+  </definition>
+  <definition name="updateHours" extends="base">
+    <put-attribute name="title" value="HOSS updateHoursPage" />
+    <put-attribute name="body" value="/WEB-INF/views/updateHours.jsp" />
+  </definition>
+  
+  <definition name="clinics" extends="base">
+    <put-attribute name="title" value="HOSS ClinicsPage" />
+    <put-attribute name="body" value="/WEB-INF/views/clinics.jsp" />
+  </definition>
+  <definition name="addClinic" extends="base">
+    <put-attribute name="title" value="HOSS AddClinicPage" />
+    <put-attribute name="body" value="/WEB-INF/views/addClinic.jsp" />
+  </definition>
+  <definition name="updateClinic" extends="base">
+    <put-attribute name="title" value="HOSS UpdateClinicPage" />
+    <put-attribute name="body" value="/WEB-INF/views/updateClinic.jsp" />
+  </definition>
+</tiles-definitions>
