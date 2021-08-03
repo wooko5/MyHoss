@@ -5,3 +5,4 @@ Hansung Univ. CapstoneDesign
 Android: Jaeuk Oh
 Web Frontend, backend: Joil Han, Sung-Min Bang
 DB: Kang-Hyun Kim
+수정중!!!!!!!!!!!ㅇ
