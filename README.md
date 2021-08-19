@@ -1,5 +1,5 @@
-### Hoss(Hospital Scheduler)
-## Hansung Univ. CapstoneDesign
+### Hansung Univ. CapstoneDesign
+## Hoss(Hospital Scheduler) 
 <br>
 '신속하고 효율적인 의료서비스 예약 모바일 및 웹 플랫폼' Hoss 입니다
 바쁜 일상 속 현대인들은 병원에서 드는 시간 때문에 병원을 가는 것을 꺼립니다. 퇴근시간과 출근시간에 영향을 받는 직장인, 학교를 다니는 학생들은 원하는 시간에 병원 진료를 받을 수 있는 프로그램이 필요하다는 생각을 바탕으로 프로젝트를 시작했습니다. 
